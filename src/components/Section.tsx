@@ -1,10 +1,13 @@
 interface Props {
   children: JSX.Element;
   sectionStyle?: string;
+  sectionId: string
 }
 
-export const Section = ({ children, sectionStyle }: Props) => {
+export const Section = ({ children, sectionStyle, sectionId }: Props) => {
   return (
-    <section className={`w-full h-[100vh] ${sectionStyle}`}>{children}</section>
+    <section id={sectionId} className={`w-full h-[100vh] p-2 ${sectionStyle}`}>
+      {children}
+    </section>
   );
 };
