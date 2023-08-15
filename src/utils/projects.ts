@@ -1,6 +1,5 @@
 import forum from "../assets/forum.png";
 import njl from "../assets/njl-music.png";
-import portfolio from "../assets/portfolio.png";
 import weather from "../assets/weather.png";
 import currency from "../assets/currency.png";
 
@@ -10,12 +9,6 @@ export const projectsList = [
     url: "https://nbn-forum.netlify.app/",
     github: "https://github.com/NBN7/foro",
     img: forum,
-  },
-  {
-    title: "Portfolio",
-    url: "https://nbn-portfolio.netlify.app/",
-    github: "https://github.com/NBN7/portfolio",
-    img: portfolio,
   },
   {
     title: "NJL Music",
