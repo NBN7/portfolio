@@ -29,7 +29,7 @@ const App = () => {
 
       <Section
         sectionId="projects"
-        sectionStyle="flex flex-col items-center justify-center"
+        sectionStyle="h-[200vh] md:h-[100vh] flex flex-col items-center justify-center"
       >
         <>
           <h2 className="p-1 text-2xl font-bold border-black border-b-4 mb-10">
