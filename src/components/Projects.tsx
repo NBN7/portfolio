@@ -4,7 +4,11 @@ import { Button } from "./Button";
 export const Projects = () => {
   return (
     <>
-      <div data-aos="fade-left" data-aos-duration="1500" className="grid md:grid-cols-3 max-w-[40rem] md:max-w-[60rem] gap-4">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        className="grid md:grid-cols-3 max-w-[40rem] md:max-w-[60rem] gap-4"
+      >
         {projectsList.map((project) => {
           return (
             <div className="box-shadow rounded-lg" key={project.title}>
