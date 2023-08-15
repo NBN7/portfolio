@@ -17,13 +17,13 @@ export const projectsList = [
     img: njl,
   },
   {
-    title: "Weather App",
+    title: "Weather",
     url: "https://nbn-weather-app.netlify.app/",
     github: "https://github.com/NBN7/weather-app",
     img: weather,
   },
   {
-    title: "Currency Converter",
+    title: "Currency",
     url: "https://nbn-currency-converter.netlify.app/",
     github: "https://github.com/NBN7/currency-converter",
     img: currency,
