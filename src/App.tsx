@@ -3,6 +3,7 @@ import { Home } from "./components/Home";
 import { Section } from "./components/Section";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
+import { Footer } from "./components/Footer";
 
 const App = () => {
   return (
@@ -29,7 +30,7 @@ const App = () => {
 
       <Section
         sectionId="projects"
-        sectionStyle="h-[200vh] md:h-[100vh] flex flex-col items-center justify-center"
+        sectionStyle="flex flex-col items-center justify-center"
       >
         <>
           <h2 className="p-1 text-2xl font-bold border-black border-b-4 mb-10">
@@ -38,6 +39,8 @@ const App = () => {
           <Projects />
         </>
       </Section>
+
+      <Footer />
     </>
   );
 };

@@ -20,7 +20,7 @@ export const Home = () => {
         </p>
       </div>
       <div data-aos="fade-up" data-aos-duration="1500">
-        <Button buttonText="Resume" href={CV} />
+        <Button buttonStyle="hover:bg-black" buttonText="Resume" href={CV} />
       </div>
     </>
   );

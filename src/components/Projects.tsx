@@ -7,7 +7,7 @@ export const Projects = () => {
       <div
         data-aos="fade-left"
         data-aos-duration="1500"
-        className="grid md:grid-cols-3 max-w-[40rem] md:max-w-[60rem] gap-4"
+        className="grid grid-cols-2 md:grid-cols-3 max-w-[40rem] md:max-w-[60rem] gap-4"
       >
         {projectsList.map((project) => {
           return (
