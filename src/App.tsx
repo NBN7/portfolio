@@ -1,3 +1,4 @@
+import { Background } from "./components/Background";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./components/Home";
 import { Section } from "./components/Section";
@@ -8,6 +9,8 @@ import { Footer } from "./components/Footer";
 const App = () => {
   return (
     <>
+      <Background />
+
       <Navbar />
       <Section
         sectionId="home"
