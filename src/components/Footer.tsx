@@ -2,7 +2,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export const Footer = () => {
   return (
-    <footer className="box-shadow flex flex-col justify-center items-center  bg-black text-white h-20 bottom-0 gap-2">
+    <footer className="box-shadow flex flex-col justify-center items-center  bg-black text-white h-20 gap-2">
       <h2>©2023 Ignacio Biran All rights reserved</h2>
       <div className="flex gap-4">
         <a
