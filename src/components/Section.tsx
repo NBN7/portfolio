@@ -8,7 +8,7 @@ export const Section = ({ children, sectionStyle, sectionId }: Props) => {
   return (
     <section
       id={sectionId}
-      className={`w-full h-[100vh] p-2 overflow-hidden ${sectionStyle}`}
+      className={`w-full min-h-[100vh] p-2 overflow-hidden ${sectionStyle}`}
     >
       {children}
     </section>

@@ -1,5 +1,5 @@
-import { projectsList } from "../utils/projects";
 import { Button } from "./Button";
+import { projectsList } from "../utils/projects";
 
 export const Projects = () => {
   return (
@@ -7,31 +7,26 @@ export const Projects = () => {
       <div
         data-aos="fade-left"
         data-aos-duration="1500"
-        className="grid grid-cols-2 md:grid-cols-3 max-w-[40rem] md:max-w-[60rem] gap-4"
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 p-2"
       >
         {projectsList.map((project) => {
           return (
-            <div className="box-shadow rounded-lg" key={project.title}>
-              <img
-                className="rounded-t-lg"
-                src={project.img}
-                alt="project-img"
-              />
-              <div className="flex flex-col bg-black text-white p-4 rounded-b-lg gap-4">
-                <h2>{project.title}</h2>
-                <div className="flex justify-around gap-2">
-                  <Button
-                    buttonStyle="w-full hover:bg-[#3b3b3b]"
-                    buttonText="Github"
-                    href={project.github}
-                  />
-                  <Button
-                    buttonStyle="w-full hover:bg-[#3b3b3b]"
-                    buttonText="Demo"
-                    href={project.url}
-                  />
-                </div>
+            <div
+              className="flex flex-col border-2 rounded-xl"
+              key={project.title}
+            >
+              <div className="flex md:w-[300px] md:h-[200px] w-[300px] h-[300px]">
+                <img
+                  className="object-cover rounded-t-xl"
+                  src={project.img}
+                  alt={project.title}
+                />
               </div>
+              <Button
+                buttonText="Github"
+                buttonStyle="w-full bg-[#242424] text-white hover:bg-[#303030] hover:transition-all hover:duration-300 p-4 rounded-b-xl"
+                href={project.github}
+              />
             </div>
           );
         })}

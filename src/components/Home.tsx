@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import CV from "../assets/cv_BIRAN IGNACIO.pdf";
+import CV from "../assets/cv_BIRANIGNACIO.pdf";
 
 export const Home = () => {
   return (
@@ -20,7 +20,11 @@ export const Home = () => {
         </p>
       </div>
       <div data-aos="fade-up" data-aos-duration="1500">
-        <Button buttonStyle="hover:bg-black" buttonText="Resume" href={CV} />
+        <Button
+          buttonStyle="w-[150px] bg-[#242424] text-white hover:bg-[#303030] hover:transition-all hover:duration-300 p-4 rounded-lg"
+          buttonText="Resume"
+          href={CV}
+        />
       </div>
     </>
   );
