@@ -6,6 +6,8 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
+import { SECTIONS } from "./constants/sections";
+
 const App = () => {
   return (
     <>
@@ -17,41 +19,22 @@ const App = () => {
         <Home />
       </Section>
 
-      <Section
-        sectionId="skills"
-        sectionStyle="flex flex-col items-center justify-center"
-      >
-        <>
-          <h2 className="p-1 text-2xl font-bold border-black border-b-4 mb-10">
-            Skills
-          </h2>
-          <Skills />
-        </>
-      </Section>
-
-      <Section
-        sectionId="projects"
-        sectionStyle="flex flex-col items-center justify-center"
-      >
-        <>
-          <h2 className="p-1 text-2xl font-bold border-black border-b-4 mb-10">
-            Projects
-          </h2>
-          <Projects />
-        </>
-      </Section>
-
-      <Section
-        sectionId="contact"
-        sectionStyle="flex flex-col items-center justify-center"
-      >
-        <>
-          <h2 className="p-1 text-2xl font-bold border-black border-b-4 mb-10">
-            Contact
-          </h2>
-          <Contact />
-        </>
-      </Section>
+      {SECTIONS.map((section, index) => (
+        <Section
+          key={index}
+          sectionId={section.toLowerCase()}
+          sectionStyle="flex flex-col items-center justify-center"
+        >
+          <>
+            <h2 className="p-1 text-2xl font-bold border-black border-b-3 mb-10">
+              {section}
+            </h2>
+            {section === "Skills" && <Skills />}
+            {section === "Projects" && <Projects />}
+            {section === "Contact" && <Contact />}
+          </>
+        </Section>
+      ))}
 
       <Footer />
     </>

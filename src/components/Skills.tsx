@@ -10,7 +10,11 @@ import { RiSupabaseFill } from "react-icons/ri";
 
 export const Skills = () => {
   return (
-    <div data-aos="fade-right" data-aos-duration="1500" className="grid grid-cols-3 max-w-[20rem] md:max-w-[60rem] md:grid-cols-3 gap-4">
+    <div
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      className="grid grid-cols-3 max-w-[20rem] md:max-w-[60rem] md:grid-cols-3 gap-4"
+    >
       <BiLogoHtml5 style={{ cursor: "pointer" }} size="110px" />
       <BiLogoCss3 style={{ cursor: "pointer" }} size="110px" />
       <BiLogoJavascript style={{ cursor: "pointer" }} size="110px" />
