@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdMenu, MdClose } from "react-icons/md";
+import { NAVBAR_ITEMS } from "../constants/navbar";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,44 +37,28 @@ export const Navbar = () => {
                 style={{ cursor: "pointer" }}
               />
               <ul className="flex flex-col text-xl gap-6 mt-10">
-                <a onClick={handleClick} href="#home">
-                  <li>Home</li>
-                </a>
-                <a onClick={handleClick} href="#skills">
-                  <li>Skills</li>
-                </a>
-                <a onClick={handleClick} href="#projects">
-                  <li>Projects</li>
-                </a>
-                <a onClick={handleClick} href="#contact">
-                  <li>Contact</li>
-                </a>
+                {NAVBAR_ITEMS.map((item, index) => (
+                  <a
+                    onClick={handleClick}
+                    href={`#${item.toLocaleLowerCase()}`}
+                    key={index}
+                  >
+                    <li>{item}</li>
+                  </a>
+                ))}
               </ul>
             </motion.div>
           )}
         </AnimatePresence>
 
         <ul className="hidden md:flex justify-center gap-4">
-          <a href="#home">
-            <li className="flex w-[80px] justify-center p-4 md:w-[90px]">
-              Home
-            </li>
-          </a>
-          <a href="#skills">
-            <li className="flex w-[80px] justify-center p-4 md:w-[90px]">
-              Skills
-            </li>
-          </a>
-          <a href="#projects">
-            <li className="flex w-[80px] justify-center p-4 md:w-[90px]">
-              Projects
-            </li>
-          </a>
-          <a href="#contact">
-            <li className="flex w-[80px] justify-center p-4 md:w-[90px]">
-              Contact
-            </li>
-          </a>
+          {NAVBAR_ITEMS.map((item, index) => (
+            <a href={`#${item.toLowerCase()}`} key={index}>
+              <li className=" hover:border-b-2 hover:border-b-black flex w-[80px] justify-center p-4 md:w-[90px]">
+                {item}
+              </li>
+            </a>
+          ))}
         </ul>
       </nav>
     </>

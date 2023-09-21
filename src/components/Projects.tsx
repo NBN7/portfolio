@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import { projectsList } from "../utils/projects";
+import { PROJECTS } from "../constants/projects";
 
 export const Projects = () => {
   return (
@@ -9,7 +9,7 @@ export const Projects = () => {
         data-aos-duration="1500"
         className="grid grid-cols-1 md:grid-cols-2 gap-4 p-2"
       >
-        {projectsList.map((project) => {
+        {PROJECTS.map((project) => {
           return (
             <div
               className="flex flex-col border-2 rounded-xl"

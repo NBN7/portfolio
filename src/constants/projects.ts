@@ -3,7 +3,7 @@ import njl from "../assets/njl-music.png";
 import weather from "../assets/weather.png";
 import currency from "../assets/currency.png";
 
-export const projectsList = [
+export const PROJECTS = [
   {
     title: "Forum",
     url: "https://nbn-forum.netlify.app/",
