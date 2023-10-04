@@ -8,9 +8,10 @@ export const Contact = () => {
       method="POST"
       className="w-[300px] flex flex-col gap-2 justify-center items-center"
     >
-      <Input variant="faded" type="text" label="Name" name="name" />
-      <Input variant="faded" type="email" label="Email" name="email" />
+      <Input required variant="faded" type="text" label="Name" name="name" />
+      <Input required variant="faded" type="email" label="Email" name="email" />
       <Textarea
+        required
         variant="faded"
         labelPlacement="outside"
         placeholder="Message"
