@@ -9,21 +9,23 @@ import { BiLogoGithub } from "react-icons/bi";
 import { RiSupabaseFill } from "react-icons/ri";
 
 export const Skills = () => {
+  const logoSize = "110px";
+
   return (
     <div
       data-aos="fade-right"
       data-aos-duration="1500"
       className="grid grid-cols-3 max-w-[20rem] md:max-w-[60rem] md:grid-cols-3 gap-4"
     >
-      <BiLogoHtml5 style={{ cursor: "pointer" }} size="110px" />
-      <BiLogoCss3 style={{ cursor: "pointer" }} size="110px" />
-      <BiLogoJavascript style={{ cursor: "pointer" }} size="110px" />
-      <BiLogoReact style={{ cursor: "pointer" }} size="110px" />
-      <BiLogoTypescript style={{ cursor: "pointer" }} size="110px" />
-      <BiLogoTailwindCss style={{ cursor: "pointer" }} size="110px" />
-      <RiSupabaseFill style={{ cursor: "pointer" }} size="110px" />
-      <BiLogoGithub style={{ cursor: "pointer" }} size="110px" />
-      <BiLogoGit style={{ cursor: "pointer" }} size="110px" />
+      <BiLogoHtml5 style={{ cursor: "pointer" }} size={logoSize} />
+      <BiLogoCss3 style={{ cursor: "pointer" }} size={logoSize} />
+      <BiLogoJavascript style={{ cursor: "pointer" }} size={logoSize} />
+      <BiLogoReact style={{ cursor: "pointer" }} size={logoSize} />
+      <BiLogoTypescript style={{ cursor: "pointer" }} size={logoSize} />
+      <BiLogoTailwindCss style={{ cursor: "pointer" }} size={logoSize} />
+      <RiSupabaseFill style={{ cursor: "pointer" }} size={logoSize} />
+      <BiLogoGithub style={{ cursor: "pointer" }} size={logoSize} />
+      <BiLogoGit style={{ cursor: "pointer" }} size={logoSize} />
     </div>
   );
 };

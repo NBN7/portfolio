@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import CV from "../assets/cv_BIRANIGNACIO.pdf";
+import CV from "../assets/BIRANIGNACIO.pdf";
 
 export const Home = () => {
   return (
