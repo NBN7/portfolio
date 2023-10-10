@@ -1,9 +1,25 @@
+import { Project } from "../types/project";
+
 import forum from "../assets/forum.png";
 import njl from "../assets/njl-music.png";
 import weather from "../assets/weather.png";
 import currency from "../assets/currency.png";
+import password from "../assets/password-generator.png";
+import translate from "../assets/translate.png";
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
+  {
+    title: "Password Generator",
+    url: "https://labo4-passwordgenerator.netlify.app/",
+    github: "https://github.com/NBN7/password-generator",
+    img: password,
+  },
+  {
+    title: "Translate",
+    url: "https://nbn-translate.netlify.app/",
+    github: "https://github.com/NBN7/translate",
+    img: translate,
+  },
   {
     title: "Forum",
     url: "https://nbn-forum.netlify.app/",
